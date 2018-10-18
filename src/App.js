@@ -12,11 +12,9 @@ class App extends Component{
     this.onChangeText = this.onChangeText.bind(this);
     this.onSubmitText = this.onSubmitText.bind(this);
   }
-
   onChangeText(event){
     this.setState({ currentTodo: event.target.value });
   }
-  
   onSubmitText(event){
     event.preventDefault();
       if(this.state.currentTodo.length != 0)
@@ -25,7 +23,6 @@ class App extends Component{
           currentTodo: ''
         });
     }
-
     render(){
       return(
         <div>
