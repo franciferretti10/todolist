@@ -16,7 +16,7 @@ class App extends Component{
   onChangeText(event){
     this.setState({ currentTodo: event.target.value });
   }
-
+  
   onSubmitText(event){
     event.preventDefault();
       if(this.state.currentTodo.length != 0)
